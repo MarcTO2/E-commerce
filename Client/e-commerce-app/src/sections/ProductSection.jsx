@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 
 const products = [
@@ -8,6 +8,7 @@ const products = [
 ];
 
 const ProductSection = () => {
+
   return (
     <section id="products" className="py-16 bg-gray-100">
       <div className="container mx-auto">

@@ -7,6 +7,8 @@ import ProductSection from './sections/ProductSection'
 import AboutSection from './sections/AboutSection'
 import ContactSection from './sections/ContactSection';
 import CartSection from './sections/CartSection';
+import Login from './components/Auth/login/Login';
+import Register from './components/Auth/register/Register';
 
 const App = () => {
   return (
@@ -15,11 +17,13 @@ const App = () => {
       <Nav />
       <main className='flex-1'>
       <Routes>
-      <Route path='/' element={<Hero />} />
+      <Route path='login' element={<Login />} />
+      <Route path='register' element={<Register />} />
+      <Route path='home' element={<Hero />} />
       <Route path='products' element={<ProductSection />} />
       <Route path='about' element={<AboutSection />} />
-      <Route path="/contact" element={<ContactSection />} />
-      <Route path="/cart" element={<CartSection />} />
+      <Route path="contact" element={<ContactSection />} />
+      <Route path="cart" element={<CartSection />} />
       </Routes>
       </main>
       <Footer />
